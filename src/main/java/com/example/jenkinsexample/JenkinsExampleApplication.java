@@ -9,8 +9,8 @@ import javax.annotation.PostConstruct;
 import java.util.logging.Logger;
 
 @SpringBootApplication
+@Slf4j
 public class JenkinsExampleApplication {
-private static Logger log= (Logger) LoggerFactory.getLogger(JenkinsExampleApplication.class);
     @PostConstruct
     public void init() {
         log.info("Application Started");
